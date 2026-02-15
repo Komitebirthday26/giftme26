@@ -376,8 +376,8 @@ h1 {
 
 }
 
-/* CONFETTI EXPLOSION DARI CURSOR */
-.cursor-confetti-layer {
+/* CONFETTI DARI HADIAH */
+.gift-confetti-layer {
   position: fixed;
   inset: 0;
   pointer-events: none;
@@ -385,25 +385,29 @@ h1 {
   overflow: hidden;
 }
 
-.cursor-confetti {
+.gift-confetti {
   position: absolute;
   will-change: transform, opacity;
-  animation: cursorExplode forwards cubic-bezier(.2,.8,.2,1);
+  animation: giftExplode forwards cubic-bezier(.2,.8,.2,1);
 }
 
-@keyframes cursorExplode {
+@keyframes giftExplode {
   0% {
-    transform: translate(0,0) rotate(0deg) scale(1);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
     opacity: 1;
   }
   100% {
-    transform: 
-      translate(var(--x), var(--y))
+    transform:
+      translate(
+        calc(-50% + var(--x)),
+        calc(-50% + var(--y))
+      )
       rotate(var(--r))
       scale(0.6);
     opacity: 0;
   }
 }
+
 
 
 
