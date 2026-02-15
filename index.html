@@ -68,11 +68,6 @@
         </div>
       </div>
     </div>
-    <div class="gift-confetti-layer">
-      position: fixed;
-      inset: 0;
-      z-index: 5000;
-    </div>
   </div>
 
 <script>
@@ -258,6 +253,7 @@ function createConfettiBurst() {
     conf.style.position = "fixed";
     conf.style.left = originX + "px";
     conf.style.top = originY + "px";
+    conf.style.zIndex = "9999";
     conf.style.pointerEvents = "none";
 
     const angle = Math.random() * Math.PI * 2;
@@ -309,6 +305,7 @@ document.getElementById("hadiah4").addEventListener("click", function() => {
 </body>
 
 </html>
+
 
 
 
