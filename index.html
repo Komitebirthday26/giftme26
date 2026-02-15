@@ -241,16 +241,19 @@ function createConfettiBurst() {
 
   function createGiftConfetti(element) {
 
-  const rect = element.getBoundingClientRect();
+  let layer = document.querySelector(".gift-confetti-layer");
 
+  if (!layer) {
+    layer = document.createElement("div");
+    layer.className = "gift-confetti-layer";
+    document.body.appendChild(layer);
+  }
+
+  const rect = element.getBoundingClientRect();
   const centerX = rect.left + rect.width / 2;
   const centerY = rect.top + rect.height / 2;
 
-  const layer = document.createElement("div");
-  layer.className = "gift-confetti-layer";
-  document.body.appendChild(layer);
-
-  const pieces = 350;
+  const pieces = 300;
 
   for (let i = 0; i < pieces; i++) {
 
@@ -277,11 +280,14 @@ function createConfettiBurst() {
     conf.style.animationDuration = (0.8 + Math.random()*0.7) + "s";
 
     layer.appendChild(conf);
+
+    setTimeout(() => conf.remove(), 1500);
   }
 
+  // Bersihkan layer setelah semua selesai
   setTimeout(() => {
-    layer.remove();
-  }, 1700);
+    layer.innerHTML = "";
+  }, 1600);
 }
   
 // ===== HADIAH BUTTON LINK =====
@@ -315,6 +321,7 @@ document.getElementById("hadiah4").addEventListener("click", function() => {
 </body>
 
 </html>
+
 
 
 
