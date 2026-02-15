@@ -131,7 +131,6 @@
     if (!yakin) return;
 
     balloonScene.style.display = "flex";
-    balloonScene.classList.add("show");
 
   // ====== TAHAP 1 (Balon Kempes - PNG transparan) ======
   balloon.src = "balloon.png";
@@ -166,7 +165,6 @@
 // Hanya untuk membersihkan scene balon setelah animasi selesai
 setTimeout(() => {
   balloonScene.style.display = "none";
-  balloonScene.classList.remove("show");
   balloon.className = "balloon";
   confettiContainer.innerHTML = "";
 }, 2000);
@@ -309,6 +307,7 @@ document.getElementById("hadiah4").addEventListener("click", function() => {
 </body>
 
 </html>
+
 
 
 
