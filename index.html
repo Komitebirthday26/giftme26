@@ -224,6 +224,7 @@ function createConfettiBurst() {
     photoContainer.style.display = "flex";
 
     requestAnimationFrame(() => {
+      photoContainer.style.pointerEvents = "auto";
       photoContainer.classList.add("active");
     });
   });
@@ -233,6 +234,7 @@ function createConfettiBurst() {
 
     setTimeout(() => {
       photoContainer.style.display = "none";
+      photoContainer.style.pointerEvents = "none";
       giftBtn.style.pointerEvents = "auto";
       giftBtn.style.opacity = "1";
       opened = false;
@@ -305,6 +307,7 @@ document.getElementById("hadiah4").addEventListener("click", function() => {
 </body>
 
 </html>
+
 
 
 
