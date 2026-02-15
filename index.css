@@ -376,24 +376,3 @@ h1 {
   align-items: center;
 
 }
-
-#balloonScene,
-.photo-container {
-  pointer-events: none;
-}
-
-#balloonScene.active,
-.photo-container.active {
-  pointer-events: auto;
-}
-
-#balloonScene.show {
-  pointer-events: auto;
-}
-
-
-
-
-
-
-
