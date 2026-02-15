@@ -376,37 +376,6 @@ h1 {
 
 }
 
-/* CONFETTI DARI HADIAH */
-.gift-confetti-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2000;
-  overflow: hidden;
-}
-
-.gift-confetti {
-  position: absolute;
-  will-change: transform, opacity;
-  animation: giftExplode forwards cubic-bezier(.2,.8,.2,1);
-}
-
-@keyframes giftExplode {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform:
-      translate(
-        calc(-50% + var(--x)),
-        calc(-50% + var(--y))
-      )
-      rotate(var(--r))
-      scale(0.6);
-    opacity: 0;
-  }
-}
 
 
 
