@@ -20,6 +20,7 @@ body {
   align-items: center;
   text-align: center;
   color: white;
+  overflow-x: hidden;
 }
 
 #mainLayout {
@@ -387,4 +388,5 @@ h1 {
 .fullscreen-confetti .confetti-piece {
   position: absolute;
 }
+
 
