@@ -22,7 +22,7 @@
     <h1>🎉 Happy Birthday 🎉</h1>
 
     <img
-      src="https://i.pinimg.com/originals/8b/e8/af/8be8af400915bec32515d0745d8ad44a.gif"
+      src="cover.gif"
       class="gif"
       alt="gif"
     >
@@ -48,22 +48,22 @@
 
     <img
       id="giftBtn"
-      src="https://img2.clipart-library.com/28/birthday-cake-clipart-gif/birthday-cake-clipart-gif-17.gif"
+      src="kue.gif"
       alt="Gift Button"
       class="gift-btn"
     />
 
     <div class="photo-container" id="photoContainer">
       <div class="white-panel">
-        <img src="https://ugokawaii.com/wp-content/uploads/2022/10/gift.gif" class="main-photo" alt="Foto Utama">
+        <img src="gift.gif" class="main-photo" alt="Foto Utama">
         <button class="close-gallery" id="closeGalleryBtn">✕</button>
         <p>Pilih Hadiah Yang Kamu Inginkan</p>
 
         <div class="gallery show">
-          <img id="hadiah1" src="https://i.pinimg.com/originals/f0/b3/87/f0b387aa0215ed48643747a5bea8652f.gif">
-          <img id="hadiah2" src="https://douglascuddletoy.com/wp-content/uploads/2025/10/264.webp">
-          <img id="hadiah3" src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeTQyZjlvNGoyamI3Nms1NHVwcXhsNG9laDVmd3UwM2IzejJ6dG9jaiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/iQg8MbGe2aG0bhZdTw/giphy.gif">
-          <img id="hadiah4" src="https://images.squarespace-cdn.com/content/v1/654c56709e999e2e383c42c2/86328746-8e60-41c9-bd41-fa9afbc25f25/Rolled+Ice+Cream+Brisbane+Pretzels.gif">
+          <img id="hadiah1" src="flower.gif">
+          <img id="hadiah2" src="bear.webp">
+          <img id="hadiah3" src="choc.gif">
+          <img id="hadiah4" src="icecream.gif">
         </div>
       </div>
     </div>
@@ -132,12 +132,12 @@
     balloonScene.style.display = "flex";
 
   // ====== TAHAP 1 (Balon Kempes - PNG transparan) ======
-  balloon.src = "https://www.clipartqueen.com/image-files/red-balloon-picture.png";
+  balloon.src = "balloon.png";
   balloon.className = "balloon stage1";
 
   // ====== TAHAP 2 (Balon Sudah Ditiup) ======
   setTimeout(() => {
-    balloon.src = "https://www.clipartqueen.com/image-files/red-balloon-picture.png";
+    balloon.src = "balloon.png";
     balloon.className = "balloon stage2";
   }, 400);
 
@@ -149,7 +149,7 @@
   // ====== MELEDAK (Ganti jadi PNG pecah) ======
   setTimeout(() => {
   // Ganti gambar jadi balon meledak
-  balloon.src = "https://www.clker.com/cliparts/h/2/g/r/n/2/balloon-pop-hi.png";
+  balloon.src = "pop.png";
   balloon.className = "balloon exploded";
 
   // Birthday card LANGSUNG muncul (tanpa delay)
@@ -323,5 +323,6 @@ document.getElementById("hadiah4").addEventListener("click", () => {
 </body>
 
 </html>
+
 
 
